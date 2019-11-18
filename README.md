@@ -1,10 +1,10 @@
 # Next.js with TypeScript, powered by Zeit Now for building APIs
 
-> This directory is a more detailed example of a [Next.js](https://nextjs.org) app that can be deployed with ZEIT Now and zero configuration.
+> This is a more detailed example of a universal [Next.js](https://nextjs.org) app that can be deployed with ZEIT Now and zero configuration.
 >
-> **It is focused on backend development** (APIs), yet uses Next.js framework (universal framework) in case rendering UI becomes necessary later on.
+> **The configuration is focused on backend development** (APIs), yet uses Next.js framework (universal framework) in case rendering UI becomes necessary later on.
 >
-> It uses Sentry for tracking errors that happens on the server, but feel free to use another tool, it's merely used as an example.
+> This boilerplate uses Sentry for tracking errors that happens on the server, but feel free to use another tool, it's merely used as an example.
 
 <!-- toc -->
 
