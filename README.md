@@ -9,7 +9,6 @@
 <!-- toc -->
 
 - [Deploy Your Own project (ultimate quick start)](#deploy-your-own-project-ultimate-quick-start)
-- [Clone this boilerplate](#clone-this-boilerplate)
 - [TODO (after generating a project from this boilerplate)](#todo-after-generating-a-project-from-this-boilerplate)
 - [Getting started](#getting-started)
 - [Deploying From Your Terminal](#deploying-from-your-terminal)
@@ -40,17 +39,11 @@ _Live Example: [https://next-typescript-api-zeit-boilerplate.unly.now.sh/](https
 - [`/date` used by the frontend](https://next-typescript-api-zeit-boilerplate.unly.now.sh/api/data)
 - [`/error` to test your Sentry integration](https://next-typescript-api-zeit-boilerplate.unly.now.sh/api/error)
 
----
-
-## Clone this boilerplate
-
-See [instructions](../../README.md#usage)
 
 ## TODO (after generating a project from this boilerplate)
 
 - Duplicate `.env.build.example` into `.env.build`
 - Define your `SENTRY_DSN` in `.env.build`, if not set then errors won't be sent to Sentry (but the app will run fine) - See [Configuring secret SENTRY_DSN in Zeit](#configuring-secret-sentry_dsn-in-zeit)
-- Delete this section
 
 ## Getting started
 
