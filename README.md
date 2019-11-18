@@ -2,7 +2,8 @@
 
 > This is a more detailed example of a universal [Next.js](https://nextjs.org) app that can be deployed with ZEIT Now and zero configuration.
 >
-> **The configuration is focused on backend development** (APIs), yet uses Next.js framework (universal framework) in case rendering UI becomes necessary later on.
+> **The default configuration is focused on backend development** (APIs), yet uses Next.js framework (universal framework) in case rendering UI becomes necessary later on.
+> **But you can use this to quick start a frontend + backend project as well.** _(we will release another OSS boilerplate with a very complete boilerplate for a rock-solid production app with Next/Zeit/TypeScript before 2020!)_
 >
 > This boilerplate uses Sentry for tracking errors that happens on the server, but feel free to use another tool, it's merely used as an example.
 
