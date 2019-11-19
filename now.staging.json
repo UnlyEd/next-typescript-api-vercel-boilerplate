@@ -5,7 +5,7 @@
   "build": {
     "env": {
       "APP_STAGE": "staging",
-      "SENTRY_DSN": "@sentry-dsn"
+      "SENTRY_DSN": "@ntazb-sentry-dsn"
     }
   },
   "routes": [
