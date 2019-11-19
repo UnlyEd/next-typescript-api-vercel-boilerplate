@@ -1,7 +1,7 @@
 # XXX See https://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions
 # Deploy to Zeit when anything is pushed in the "master" branch.
 # You must have added a GitHub secret "ZEIT_TOKEN" in your GitHub project for the deploy to succeed
-name: Deploy to Now production
+name: Deploy to Now staging
 
 on:
   push:
