@@ -1,6 +1,5 @@
 # Optimize speed/size of deployments by not uploading those files
 .idea/
-.next/
 node_modules/
 coverage/
 .codeclimate.yml
