@@ -166,7 +166,7 @@ You'll need to provide your `SENTRY_DSN` in `.env.build` file. You can get it at
 
 In order to allow Zeit to access your SENTRY_DSN sensitive key, we use [Now secrets](https://zeit.co/docs/v2/environment-variables-and-secrets).
 
-- `now secrets add sentry-dsn YOUR_DSN`
+- `now secrets add ntazb-sentry-dsn YOUR_DSN`
 
 This ensures the secrets is not git-tracked if you consider it's too sensitive. We recommend using secrets for all sensitive information.
 
