@@ -168,6 +168,7 @@ In order to allow Zeit to access your SENTRY_DSN sensitive key, we use [Now secr
 
 - `now secrets add ntazb-sentry-dsn YOUR_DSN`
 
-This ensures the secrets is not git-tracked if you consider it's too sensitive. We recommend using secrets for all sensitive information.
+This ensures this secret is not git-tracked if you consider it's too sensitive. 
+We recommend using secrets for all sensitive information.
 
 **N.B**: You still need to have it in your `.env.build` file for local development. _(yeah, that sucks)_
