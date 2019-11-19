@@ -108,7 +108,7 @@ This project aims at providing a quick start with TypeScript and focused on the 
 
 The API lives at [src/pages/api](./src/pages/api). The boilerplate comes with few files and test to showcase how it can be done.
 
-The paths are automatically linked to the filesystem, read 
+The paths are automatically linked to the filesystem, read [https://nextjs.org/docs#dynamic-routing](https://nextjs.org/docs#dynamic-routing).
 
 ---
 
