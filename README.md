@@ -37,7 +37,7 @@ _Live Example: [https://next-typescript-api-zeit-boilerplate.unly.now.sh/](https
 
 **Play around with the API:**
 - [`/status` with metadata](https://next-typescript-api-zeit-boilerplate.unly.now.sh/api/status)
-- [`/date` used by the frontend](https://next-typescript-api-zeit-boilerplate.unly.now.sh/api/data)
+- [`/date` used by the frontend](https://next-typescript-api-zeit-boilerplate.unly.now.sh/api/date)
 - [`/error` to test your Sentry integration](https://next-typescript-api-zeit-boilerplate.unly.now.sh/api/error)
 
 
