@@ -2,10 +2,10 @@ import * as Sentry from '@sentry/node';
 import get from 'lodash.get';
 
 /**
- * Initialize Sentry and return it.
+ * Initialize Sentry and export it.
  *
- * Helper to avoid doing the init() call in every /pages/api file.
- * Used in pages/index for the client side, and doesn't need to be included in any frontend file.
+ * Helper to avoid duplicating the init() call in every /pages/api file.
+ * Also used in pages/index for the client side.
  */
 Sentry.init({
   dsn: process.env.SENTRY_DSN,
@@ -24,10 +24,14 @@ Sentry.configureScope((scope) => { // See https://www.npmjs.com/package/@sentry/
   scope.setTag('nodejs', process.version);
   scope.setTag('nodejsAWS', process.env.AWS_EXECUTION_ENV || null); // Optional - Available on production environment only
   scope.setTag('memory', process.env.AWS_LAMBDA_FUNCTION_MEMORY_SIZE || null); // Optional - Available on production environment only
-  scope.setTag('cache', process.env.GRAPHCMS_CACHE_ENDPOINT || null); // Optional - Available on production environment only
   scope.setTag('buildTime', process.env.BUILD_TIME);
 });
 
+/**
+ * Configure the Sentry scope by extracting useful tags and context from the given request.
+ *
+ * @param req
+ */
 export const configureReq = (req) => {
   Sentry.configureScope((scope) => {
     scope.setTag('host', get(req, 'headers.host'));
