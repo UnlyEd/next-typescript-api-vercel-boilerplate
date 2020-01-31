@@ -1,3 +1,8 @@
+<a href="https://unly.org"><img src="https://storage.googleapis.com/unly/images/ICON_UNLY.png" align="right" height="20" alt="Unly logo" title="Unly logo" /></a>
+[![Maintainability](https://api.codeclimate.com/v1/badges/8eb12b795ca757dbc07d/maintainability)](https://codeclimate.com/github/UnlyEd/next-typescript-api-zeit-boilerplate/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/8eb12b795ca757dbc07d/test_coverage)](https://codeclimate.com/github/UnlyEd/next-typescript-api-zeit-boilerplate/test_coverage)
+[![Known Vulnerabilities](https://snyk.io/test/github/UnlyEd/next-typescript-api-zeit-boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/UnlyEd/next-typescript-api-zeit-boilerplate?targetFile=package.json)
+
 # Next.js with TypeScript, powered by Zeit Now for building APIs
 
 > This is a more detailed example of a universal [Next.js](https://nextjs.org) app that can be deployed with ZEIT Now and zero configuration.
@@ -21,6 +26,9 @@
 - [EsLint](#eslint)
 - [Sentry](#sentry)
   * [Configuring secret SENTRY_DSN in Zeit](#configuring-secret-sentry_dsn-in-zeit)
+- [Vulnerability disclosure](#vulnerability-disclosure)
+- [Contributors and maintainers](#contributors-and-maintainers)
+- [**[ABOUT UNLY]**](#about-unly-)
 
 <!-- tocstop -->
 
@@ -172,3 +180,32 @@ This ensures this secret is not git-tracked if you consider it's too sensitive.
 We recommend using secrets for all sensitive information.
 
 **N.B**: You still need to have it in your `.env.build` file for local development. _(yeah, that sucks)_
+
+# Vulnerability disclosure
+
+[See our policy](https://github.com/UnlyEd/Unly).
+
+---
+
+# Contributors and maintainers
+
+This project is being maintained by:
+- [Unly] Ambroise Dhenain ([Vadorequest](https://github.com/vadorequest)) **(active)**
+
+---
+
+# **[ABOUT UNLY]** <a href="https://unly.org"><img src="https://storage.googleapis.com/unly/images/ICON_UNLY.png" height="40" align="right" alt="Unly logo" title="Unly logo" /></a>
+
+> [Unly](https://unly.org) is a socially responsible company, fighting inequality and facilitating access to higher education. 
+> Unly is committed to making education more inclusive, through responsible funding for students. 
+We provide technological solutions to help students find the necessary funding for their studies. 
+
+We proudly participate in many TechForGood initiatives. To support and learn more about our actions to make education accessible, visit : 
+- https://twitter.com/UnlyEd
+- https://www.facebook.com/UnlyEd/
+- https://www.linkedin.com/company/unly
+- [Interested to work with us?](https://jobs.zenploy.io/unly/about)
+
+Tech tips and tricks from our CTO on our [Medium page](https://medium.com/unly-org/tech/home)!
+
+#TECHFORGOOD #EDUCATIONFORALL
