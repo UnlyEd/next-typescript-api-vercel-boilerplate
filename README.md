@@ -12,6 +12,13 @@
 >
 > This boilerplate uses Sentry for tracking errors that happens on the server, but feel free to use another tool, it's merely used as an example.
 
+## Other alternatives
+
+> **We released in February 2020 our ["Next Right Now" boilerplate](https://github.com/UnlyEd/next-right-now), which is similar to this project, except it is a universal/isomorphic boilerplate that isn't solely focused on the backend/api, unlike this one.** Make sure to check it out!
+
+
+---
+
 <!-- toc -->
 
 - [Deploy Your Own project (ultimate quick start)](#deploy-your-own-project-ultimate-quick-start)
