@@ -84,8 +84,8 @@ Go to [`http://localhost:9999`](http://localhost:9999) once running.
 You can deploy your new Next.js project with a single command from your terminal using [Now CLI](https://vercel.com/download):
 
 ```shell
-yarn deploy # Deploy a staging/preview deployment (use now.staging.json)
-yarn deploy:production # Deploy a production deployment (use now.production.json)
+yarn deploy # Deploy a staging/preview deployment (use vercel.staging.json)
+yarn deploy:production # Deploy a production deployment (use vercel.production.json)
 ```
 
 ---
