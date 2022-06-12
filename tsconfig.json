@@ -22,7 +22,8 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": false,
-    "target": "esnext"
+    "target": "esnext",
+    "incremental": true
   },
   "exclude": [
     "node_modules"
