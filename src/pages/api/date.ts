@@ -1,8 +1,8 @@
-import { NowRequest, NowResponse } from '@now/node';
+import { NextApiRequest, NextApiResponse } from 'next';
 
 import Sentry, { configureReq } from '../../utils/sentry';
 
-export const date = async (req: NowRequest, res: NowResponse): Promise<void> => {
+export const date = async (req: NextApiRequest, res: NextApiResponse): Promise<void> => {
   // Allow CORS requests
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');

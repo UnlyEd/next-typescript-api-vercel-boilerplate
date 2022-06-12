@@ -1,7 +1,10 @@
-import { NowRequest, NowResponse } from '@now/node';
+import {
+  NextApiRequest,
+  NextApiResponse,
+} from 'next';
 import Sentry, { configureReq } from '../../utils/sentry';
 
-export const status = async (req: NowRequest, res: NowResponse): Promise<void> => {
+export const status = async (req: NextApiRequest, res: NextApiResponse): Promise<void> => {
   try {
     configureReq(req);
 
@@ -11,7 +14,7 @@ export const status = async (req: NowRequest, res: NowResponse): Promise<void> =
     console.error(e.message);
 
     Sentry.withScope((scope): void => {
-      scope.setContext('body', req.body)
+      scope.setContext('body', req.body);
       exceptionId = Sentry.captureException(e);
     });
 

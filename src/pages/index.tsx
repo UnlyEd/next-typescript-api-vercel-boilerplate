@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
-import Head from '../components/head';
-import Nav from '../components/nav';
+import Head from '../components/Head';
+import Nav from '../components/Nav';
 
 import '../utils/sentry'; // Init Sentry - Should be moved in /pages/_app.tsx if you want to init once only for every page
 
@@ -37,15 +37,15 @@ const Home = (): JSX.Element => {
         </p>
 
         <div className="row">
-          <a className="card" href="https://github.com/zeit/next.js#setup">
+          <a className="card" href="https://github.com/vercel/next.js#setup">
             <h3>Getting Started &rarr;</h3>
             <p>Learn more about Next.js on GitHub and in their examples.</p>
           </a>
-          <a className="card" href="https://github.com/zeit/next.js/tree/master/examples">
+          <a className="card" href="https://github.com/vercel/next.js/tree/master/examples">
             <h3>Examples &rarr;</h3>
             <p>Find other example boilerplates on the Next.js GitHub.</p>
           </a>
-          <a className="card" href="https://github.com/zeit/next.js">
+          <a className="card" href="https://github.com/vercel/next.js">
             <h3>Create Next App &rarr;</h3>
             <p>Was this tool helpful? Let us know how we can improve it!</p>
           </a>

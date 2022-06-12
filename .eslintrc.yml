@@ -41,7 +41,7 @@ rules: # See https://eslint.org/docs/rules
     - always
   max-len: 0 # Disable line length checks, because the IDE is already configured to warn about it, and it's a waste of time to check for lines that are too long, especially in comments (like this one!)
   strict: 'off'
-  no-console: 2 # Shouldn't use "console", but "logger" instead
+  no-console: 0 # Shouldn't use "console", but "logger" instead
   allowArrowFunctions: 0
   no-unused-vars:
     - warn # Warn otherwise it false-positive with needed React imports
@@ -75,5 +75,5 @@ rules: # See https://eslint.org/docs/rules
   linebreak-style:
     - error
     - unix
-  '@typescript-eslint/ban-ts-ignore': warn
+  '@typescript-eslint/ban-ts-comment': warn
   '@typescript-eslint/no-use-before-define': warn
