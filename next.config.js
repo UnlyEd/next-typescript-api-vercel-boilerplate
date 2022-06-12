@@ -6,8 +6,8 @@ console.debug(`Building Next with NODE_ENV="${process.env.NODE_ENV}" APP_STAGE="
 
 module.exports = withSourceMaps({
   env: {
-    // XXX Duplication of the environment variables, this is used locally (See https://github.com/zeit/next.js#build-time-configuration)
-    //  while now.json:build:env will be used on the Now platform (See https://zeit.co/docs/v2/build-step/#providing-environment-variables)
+    // XXX Duplication of the environment variables, this is used locally (See https://github.com/vercel/next.js#build-time-configuration)
+    //  while now.json:build:env will be used on the Now platform (See https://vercel.com/docs/v2/build-step/#providing-environment-variables)
     APP_STAGE: process.env.APP_STAGE,
     AMPLITUDE_API_KEY: process.env.AMPLITUDE_API_KEY,
     SENTRY_DSN: process.env.SENTRY_DSN,
@@ -35,7 +35,7 @@ module.exports = withSourceMaps({
       fs: 'empty',
     };
 
-    // XXX See https://github.com/zeit/next.js/blob/canary/examples/with-sentry-simple/next.config.js
+    // XXX See https://github.com/vercel/next.js/blob/canary/examples/with-sentry-simple/next.config.js
     // In `pages/_app.js`, Sentry is imported from @sentry/node. While
     // @sentry/browser will run in a Node.js environment, @sentry/node will use
     // Node.js-only APIs to catch even more unhandled exceptions.
