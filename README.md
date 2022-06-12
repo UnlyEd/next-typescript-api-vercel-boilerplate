@@ -48,12 +48,12 @@ Deploy your own Next.js project based on this template with Vercel. ([free](http
 **Pro tip**: If you allow Vercel to access your GitHub account, it will even create the GitHub repository for you and automatically link it to your Vercel project and enable Vercel <> GitHub integration (automated CI/CD).
 **[Though, beware this](#deploying-through-vercel--github-cicd-official-way-not-recommended).**
 
-_Live Example: [https://next-typescript-api-vercel-boilerplate.unly.now.sh/](https://next-typescript-api-vercel-boilerplate.unly.now.sh/)_
+_Live Example: [https://next-typescript-api-vercel-boilerplate.unly.vercel.shapp/](https://next-typescript-api-vercel-boilerplate.unly.vercel.app/)_
 
 **Play around with the API:**
-- [`/status` with metadata](https://next-typescript-api-vercel-boilerplate.unly.now.sh/api/status)
-- [`/date` used by the frontend](https://next-typescript-api-vercel-boilerplate.unly.now.sh/api/date)
-- [`/error` to test your Sentry integration](https://next-typescript-api-vercel-boilerplate.unly.now.sh/api/error)
+- [`/status` with metadata](https://next-typescript-api-vercel-boilerplate.unly.vercel.app/api/status)
+- [`/date` used by the frontend](https://next-typescript-api-vercel-boilerplate.unly.vercel.app/api/date)
+- [`/error` to test your Sentry integration](https://next-typescript-api-vercel-boilerplate.unly.vercel.app/api/error)
 
 
 ## TODO (after generating a project from this boilerplate)
@@ -96,7 +96,7 @@ If you link your GitHub repository to a Vercel project, you'll benefit from auto
 
 Every time you push something to the GitHub remote, it'll get deployed.
 
-> **N.B: Be careful about when you merge a branch into the `master` branch though, as it will automatically deploy the `now.staging.json` configuration and not the production!**
+> **N.B: Be careful about when you merge a branch into the `master` branch though, as it will automatically deploy the `vercel.staging.json` configuration and not the production!**
 
 Due to this reason, we recommend to disable the GitHub integration for your Vercel project, **if you need to deploy a different configuration based on the stage**.
 Vercel does not allow any kind of configuration to customise this behaviour at this time, it will therefore always deploy CI/CD using the `now.json` configuration **(which is a symbolic link to `now.staging.json`)**
