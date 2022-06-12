@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
-    "allowJs": true,
+    "baseUrl": ".",
+    "allowJs": false,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "jsxImportSource": "@emotion/react",
     "lib": [
       "dom",
       "dom.iterable",
@@ -22,11 +24,16 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": false,
-    "target": "esnext",
-    "incremental": true
+    "target": "ES2019"
   },
   "exclude": [
-    "node_modules"
+    ".github",
+    ".next",
+    "_site",
+    "coverage",
+    "cypress",
+    "node_modules",
+    "public"
   ],
   "include": [
     "next-env.d.ts",

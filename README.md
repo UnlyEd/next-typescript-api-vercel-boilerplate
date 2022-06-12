@@ -58,8 +58,8 @@ _Live Example: [https://next-typescript-api-vercel-boilerplate.unly.now.sh/](htt
 
 ## TODO (after generating a project from this boilerplate)
 
-- Duplicate `.env.build.example` into `.env.build`
-- Define your `SENTRY_DSN` in `.env.build`, if not set then errors won't be sent to Sentry (but the app will run fine) - See [Configuring secret SENTRY_DSN in Vercel](#configuring-secret-sentry_dsn-in-vercel)
+- Duplicate `.env.local.example` into `.env.local`
+- Define your `SENTRY_DSN` in `.env.local`, if not set then errors won't be sent to Sentry (but the app will run fine) - See [Configuring secret SENTRY_DSN in Vercel](#configuring-secret-sentry_dsn-in-vercel)
 
 ## Getting started
 
@@ -175,18 +175,18 @@ We usually link Sentry to our Slack channels to get notifications in real time a
 
 Feel free to replace it by another similar tooling of your choice!
 
-You'll need to provide your `SENTRY_DSN` in `.env.build` file. You can get it at https://sentry.io/settings/unly/projects/YOUR_PROJECT/keys/
+You'll need to provide your `SENTRY_DSN` in `.env.local` file. You can get it at https://sentry.io/settings/unly/projects/YOUR_PROJECT/keys/
 
 ### Configuring secret SENTRY_DSN in Vercel
 
 In order to allow Vercel to access your SENTRY_DSN sensitive key, we use [Now secrets](https://vercel.com/docs/v2/environment-variables-and-secrets).
 
-- `now secrets add ntazb-sentry-dsn YOUR_DSN`
+- `vercel secrets add ntazb-sentry-dsn YOUR_DSN`
 
 This ensures this secret is not git-tracked if you consider it's too sensitive.
 We recommend using secrets for all sensitive information.
 
-**N.B**: You still need to have it in your `.env.build` file for local development. _(yeah, that sucks)_
+**N.B**: You still need to have it in your `.env.local` file for local development. _(yeah, that sucks)_
 
 # Vulnerability disclosure
 

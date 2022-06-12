@@ -4,7 +4,7 @@ node_modules/
 coverage/
 .codeclimate.yml
 .editorconfig
-.env.build.example
+.env.local.example
 README.md
 yarn.lock
 yarn-error.log

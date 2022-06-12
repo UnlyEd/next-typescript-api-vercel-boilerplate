@@ -116,7 +116,7 @@ coverage/
 
 # misc
 .env*
-!.env.build.example
+!.env.local.example
 
 # debug
 npm-debug.log*
