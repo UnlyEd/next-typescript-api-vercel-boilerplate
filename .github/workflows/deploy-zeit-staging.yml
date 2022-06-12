@@ -1,5 +1,5 @@
 # XXX See https://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions
-# Deploy to Zeit when anything is pushed in the "master" branch.
+# Deploy to Vercel when anything is pushed in the "master" branch.
 # You must have added a GitHub secret "ZEIT_TOKEN" in your GitHub project for the deploy to succeed
 name: Deploy to Now staging
 
@@ -16,7 +16,7 @@ jobs:
       - name: Installing node.js
         uses: actions/setup-node@v1 # Used to install node environment
         with:
-          node-version: '10.x' # Use the same node.js version as the one Zeit's uses (currently node10.x)
+          node-version: '10.x' # Use the same node.js version as the one Vercel's uses (currently node14.x)
 
   deploy-staging:
     name: Deploy on staging
@@ -24,7 +24,7 @@ jobs:
     needs: setup # Need to wait for setup
     steps:
       - uses: actions/checkout@v1 # Get last commit pushed
-      - name: Deploying on Zeit
+      - name: Deploying on Vercel
         run: yarn deploy --token $ZEIT_TOKEN
         env:
           ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }} # Passing github's secret to the worker
