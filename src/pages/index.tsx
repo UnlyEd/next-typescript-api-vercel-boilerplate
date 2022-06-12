@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
-import Head from '../components/head';
-import Nav from '../components/nav';
+import Head from '../components/Head';
+import Nav from '../components/Nav';
 
 import '../utils/sentry'; // Init Sentry - Should be moved in /pages/_app.tsx if you want to init once only for every page
 
