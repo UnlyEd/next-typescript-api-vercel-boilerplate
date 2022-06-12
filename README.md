@@ -113,7 +113,7 @@ To make it work, you need to:
     1. Go to your **[personal settings](https://vercel.com/account/tokens)** *(not your team's!)*
     1. Create a new token, I usually name it `GitHub Actions`
     1. Go to your GitHub project's settings page then `Secrets`, would be `https://github.com/UnlyEd/boilerplates-generator/settings/secrets` for this project
-    1. Add the new secret, named `ZEIT_TOKEN` (the same as the one in your)
+    1. Add the new secret, named `VERCEL_TOKEN` (the same as the one in your)
 
 ---
 

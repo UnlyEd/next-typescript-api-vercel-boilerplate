@@ -4,7 +4,7 @@
   "description": "A Next.js starter app.",
   "license": "MIT",
   "scripts": {
-    "start": "vercel dev --listen 9999",
+    "start": "yarn dev",
     "dev": "next dev --port 9999",
     "build": "yarn test:once && next build",
     "next": "next start",

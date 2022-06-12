@@ -1,6 +1,6 @@
 # XXX See https://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions
 # Deploy to Vercel when anything is pushed in the "master" branch.
-# You must have added a GitHub secret "ZEIT_TOKEN" in your GitHub project for the deploy to succeed
+# You must have added a GitHub secret "VERCEL_TOKEN" in your GitHub project for the deploy to succeed
 name: Deploy to Now staging
 
 on:
@@ -25,6 +25,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1 # Get last commit pushed
       - name: Deploying on Vercel
-        run: yarn deploy --token $ZEIT_TOKEN
+        run: yarn deploy --token $VERCEL_TOKEN
         env:
-          ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }} # Passing github's secret to the worker
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }} # Passing github's secret to the worker
