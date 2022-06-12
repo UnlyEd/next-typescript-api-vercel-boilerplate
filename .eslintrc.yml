@@ -75,5 +75,5 @@ rules: # See https://eslint.org/docs/rules
   linebreak-style:
     - error
     - unix
-  '@typescript-eslint/ban-ts-ignore': warn
+  '@typescript-eslint/ban-ts-comment': warn
   '@typescript-eslint/no-use-before-define': warn
