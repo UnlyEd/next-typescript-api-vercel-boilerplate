@@ -1,7 +1,7 @@
-import { NowRequest, NowResponse } from '@now/node';
+import { NextApiRequest, NextApiResponse } from 'next';
 import Sentry, { configureReq } from '../../utils/sentry';
 
-export const status = async (req: NowRequest, res: NowResponse): Promise<void> => {
+export const status = async (req: NextApiRequest, res: NextApiResponse): Promise<void> => {
   try {
     configureReq(req);
 
