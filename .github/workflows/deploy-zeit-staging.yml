@@ -1,5 +1,5 @@
 # XXX See https://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions
-# Deploy to Vercel when anything is pushed in the "master" branch.
+# Deploy to Vercel when anything is pushed in any branch other than the "master" branch.
 # You must have added a GitHub secret "VERCEL_TOKEN" in your GitHub project for the deploy to succeed
 name: Deploy to Now staging
 
